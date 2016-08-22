@@ -7,10 +7,12 @@
 
 Test it works? You may also need to adjust web.config:
 
+```xml
 <authorization>
       <deny users="?" />
       <allow users="domain\User" />
 </authorization>
+```
 
  - Install-Package Microsoft.Owin
  - Install-Package Microsoft.Owin.Host.SystemWeb
@@ -76,6 +78,7 @@ CONFIGURING OWIN TO USE AZURE ACTIVE DIRECTORY AS A SOURCE
  - Navigate to Contact action again. Try logging in as the user you created earlier (Bob), if getting 407, add proxy help
 YOU MUST LOG IN FROM THE CORRECT SSL ADDRESS!
 
+```xml
   <system.net>
       <defaultProxy useDefaultCredentials="true">
         <proxy
@@ -84,7 +87,7 @@ YOU MUST LOG IN FROM THE CORRECT SSL ADDRESS!
         />
       </defaultProxy>
   </system.net>
-
+```
 
 
 CHECKING OUT THE CLAIMS AUTHENTICATION GIVES US
