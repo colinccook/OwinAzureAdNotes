@@ -82,7 +82,7 @@ YOU MUST LOG IN FROM THE CORRECT SSL ADDRESS!
   <system.net>
       <defaultProxy useDefaultCredentials="true">
         <proxy
-	  proxyaddress="http://devproxy.campus.ccn.ac.uk:9090" 
+	  proxyaddress="http://devproxy.domain.co.uk:9090" 
           bypassonlocal="True" usesystemdefault="true"
         />
       </defaultProxy>
